@@ -1,0 +1,80 @@
+body{
+	width: 100%;
+	padding: 25px;
+	background-image: url("../img/giphy.gif");
+	text-align: center;
+}
+
+body .displayDiv{
+	display: flex;
+	justify-content: center;
+}
+#bootstrap-overrides h1{
+	font-family: 'Fugaz One', cursive;
+	color: white;
+	font-size: 80px;
+	padding: 5px;
+	margin:0;
+}
+
+#bootstrap-overrides h2{
+	font-family: 'Fugaz One', cursive;
+	color: white;
+	font-size: 30px;
+	padding: 5px;
+	margin:0;
+}
+#bootstrap-overrides h3{
+	font-family: 'Mallanna', sans-serif;
+	color: white;
+	width: 50%;
+	font-size: 20px;
+	padding: 5px;
+	margin:0;
+}
+#bootstrap-overrides p{
+	font-family: 'Mallanna', sans-serif;
+	color: white;
+	font-size: 16px;
+	padding: 5px;
+	margin:0;
+}
+
+.horoscopeForm{
+	padding-bottom: 100px;
+}
+
+.select-style{
+	margin: 25px 0 0 800px;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 250px;
+
+}
+.select-style select {
+	text-align: center;
+    padding: 2px 8px;
+    border: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+#calcDate{
+	width: 200px;
+	text-align: center;
+	margin-left: 823px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}

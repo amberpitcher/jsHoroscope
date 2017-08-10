@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daily Horoscope</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Mallanna" rel="stylesheet">
+
+<body id="bootstrap-overrides">
+	<head>
+		<img src="img/fortune-teller.gif" width="400" height="auto">
+		
+	</head>
+
+	<main>
+	<h1>DAILY HOROSCOPE</h1>
+	<div>
+		<form class="horoscopeForm">
+		<h2 id="zodiacName"></h2>
+		<div class="displayDiv"><h3 id="dispHoroscopeDiv"></h3></div>
+			<div class="select-style">
+				<select id="dispZodiacInput">
+					<option>Please Select Your Zodiac Sign</option>
+					<option>Aquarius</option>
+					<option>Pisces</option>
+					<option>Aries</option>
+					<option>Taurus</option>
+					<option>Gemini</option>
+					<option>Cancer</option>
+					<option>Leo</option>
+					<option>Virgo</option>
+					<option>Libra</option>
+					<option>Scorpio</option>
+					<option>Sagittarius</option>
+					<option>Capricorn</option>
+				</select>
+			</div>
+		</form>
+	</div>
+		<div>
+			<form onsubmit="return false">
+				<h2>Find Your Zodiac Sign</h2>
+				<p>if you aren't sure what your Zodiac Sign is, enter your birth date to find out!</p>
+				<input id="calcDate" type="text" class="form-control inline" value="02-16-2012">
+				<button id="calcBtn">Calculate</button>
+				<p id="calcZodiac"></p>
+			</form>
+		</div>
+	</main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$('#calcDate').datepicker({});
+	</script>
+	<script>
+		$("#dispZodiacInput").val($("#dispZodiacInput option:eq(0)").val());
+		$("#dispZodiacInput").selectmenu("refresh");
+	</script>
+</body>
+</html>
